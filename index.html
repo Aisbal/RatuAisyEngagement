@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ratu & Aisy Engagement</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Tombol Pembuka -->
+    <div id="opening-screen">
+      <h1>You're Invited</h1>
+      <button id="open-btn">Buka Undangan</button>
+    </div>
+
+    <!-- Konten Undangan -->
+    <div id="invitation-container" class="hidden">
+      <h2>Ratu & Aisy</h2>
+      <p>Kepada Yth. Bapak/Ibu/Saudara/i</p>
+      <p>Dengan hormat, kami mengundang Anda ke acara pertunangan kami.</p>
+      <section class="wedding-content">
+        <h2 class="section-title">Dengan Penuh Cinta</h2>
+        <p class="intro-text">
+          Kami mengundang Anda untuk merayakan hari istimewa kami
+        </p>
+
+        <div class="bride-groom">
+          <div class="photo-section">
+            <img src="ais.jpg" alt="Calon Suami" class="circle-img" />
+            <img src="ratu.jpg" alt="Calon Istri" class="circle-img" />
+          </div>
+
+          <h3>Ratu Siti Aisyah <br />& <br />Muhammad Aisy Iqbaal</h3>
+          <div class="family-info-grid">
+            <div class="bride-info">
+              <p class="label">Putri dari:</p>
+              <p>Bpk. Alm Syahri Parinduri</p>
+              <p class="and">&</p>
+              <p>Ibu Poppy Eva Susan</p>
+            </div>
+            <div class="groom-info">
+              <p class="label">Putra dari:</p>
+              <p>Bpk. Sarjono</p>
+              <p class="and">&</p>
+              <p>Ibu Novriani</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="event-info">
+          <p>🗓️ <strong>Minggu, 7 September 2025</strong></p>
+          <p>⏰ 10.00 WIB</p>
+          <p>📍 Rumah Mempelai Wanita</p>
+          <div class="countdown-text">⏳ Acara dimulai dalam:</div>
+          <div id="countdown" class="countdown-timer"></div>
+        </div>
+
+        <div class="action-buttons">
+          <a href="#" class="btn">Lihat Lokasi</a>
+          <a href="#" class="btn">Konfirmasi Kehadiran</a>
+        </div>
+      </section>
+    </div>
+
+    <audio id="bgMusic" loop>
+      <source src="wedding.mp3" type="audio/mpeg" />
+    </audio>
+
+    <script src="script.js"></script>
+  </body>
+</html>

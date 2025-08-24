@@ -1,0 +1,287 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+h1,
+h2 {
+  font-family: "Great Vibes", cursive;
+}
+p {
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(to bottom, #e6f0fa, #f8fbff);
+  background-size: 400% 400%;
+  animation: gradientShift 15s ease infinite;
+  color: #1e3a5f;
+}
+
+/* Opening screen */
+#opening-screen {
+  height: 100vh;
+  background: linear-gradient(to bottom, #a2cce3, #d2ebf5);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: opacity 1s ease;
+}
+
+#opening-screen h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  color: #045d82;
+}
+
+#open-btn {
+  padding: 12px 30px;
+  font-size: 1.2rem;
+  background-color: #045d82;
+  color: #fff;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: 0.3s ease;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+#open-btn:hover {
+  background-color: #06749c;
+}
+
+/* Undangan utama */
+#invitation-container {
+  padding: 50px 20px;
+  text-align: center;
+  animation: fadeIn 1.5s ease forwards;
+  opacity: 0;
+}
+
+#invitation-container h2 {
+  font-size: 2.5rem;
+  color: #045d82;
+  margin-bottom: 10px;
+}
+
+#invitation-container p {
+  font-size: 1.2rem;
+  color: #444;
+}
+
+.hidden {
+  display: none;
+}
+
+.wedding-content {
+  text-align: center;
+  padding: 3rem 1.5rem;
+  color: #1e3a5f;
+}
+
+.section {
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  color: #1e3a5f;
+  font-weight: bold;
+}
+
+.intro-text {
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+}
+
+.bride-groom h3 {
+  font-size: 1.8rem;
+  color: #1e3a5f;
+  margin-bottom: 0.5rem;
+}
+
+.family-info-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px; /* Jarak antar kolom */
+  margin-top: 20px;
+  text-align: center;
+}
+.family-info-grid .bride-info,
+.family-info-grid .groom-info {
+  background-color: #f8f9fd;
+  padding: 15px;
+  border-radius: 12px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.family-info-grid .bride-info:hover,
+.family-info-grid .groom-info:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+.family-info-grid p {
+  margin: 6px 0;
+  font-size: 15px;
+  line-height: 1.5;
+  color: #333;
+}
+
+.family-info-grid .label {
+  font-weight: bold;
+  margin-bottom: 4px;
+  font-size: 16px;
+  color: #1f2f56;
+}
+
+.family-info-grid .and {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 4px 0;
+  color: #6c6c6c;
+  text-align: center;
+}
+.bride-groom p {
+  margin: 0.2rem 0;
+}
+
+.event-info p {
+  font-size: 1.1rem;
+  margin: 0.5rem 0;
+}
+
+.action-buttons {
+  margin-top: 2rem;
+}
+
+.btn {
+  display: inline-block;
+  background-color: #1e3a5f;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  text-decoration: none;
+  margin: 0.5rem;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #2f5f99;
+}
+
+.photo-section {
+  display: flex;
+  gap: 2rem;
+  margin: 2rem 0;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.circle-img {
+  width: 300px; /* atur sesuai lingkaran */
+  height: 400px; /* biar tetap bulet */
+  object-fit: cover; /* ini bikin fotonya nge-zoom otomatis */
+  object-position: center; /* fokus di tengah */
+  border-radius: 50%; /* biar lingkaran */
+  border: 5px solid grey; /* sesuai yang kamu pakai */
+}
+
+.circle-img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.25);
+}
+
+.countdown-text {
+  font-size: 1rem;
+  color: #003049;
+  margin-top: 1.5rem;
+}
+
+.countdown-timer {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #003049;
+  background-color: #e0f2ff;
+  padding: 0.8rem 1.2rem;
+  border-radius: 1rem;
+  display: inline-block;
+  margin-top: 0.5rem;
+}
+
+#musicToggle {
+  position: fixed;
+  bottom: 1.5rem;
+  right: 1.5rem;
+  background-color: #003049;
+  color: white;
+  border: none;
+  padding: 0.6rem 1rem;
+  border-radius: 2rem;
+  font-size: 0.9rem;
+  cursor: pointer;
+  z-index: 999;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+/* Responsif dasar untuk layar kecil */
+@media (max-width: 768px) {
+  body {
+    padding: 1rem;
+    font-size: 16px;
+  }
+
+  .invitation-container {
+    padding: 1.5rem;
+    border-radius: 20px;
+  }
+
+  .couple-photo {
+    width: 180px;
+    height: 180px;
+    margin: 0 auto 1rem auto;
+  }
+
+  .countdown {
+    font-size: 1.2rem;
+    margin: 1.5rem 0;
+    text-align: center;
+  }
+
+  .gallery-grid {
+    grid-template-columns: 1fr; /* Galeri 1 kolom di HP */
+    gap: 1rem;
+  }
+
+  .button-invite {
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .family-info-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Animasi lembut */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
